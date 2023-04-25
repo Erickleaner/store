@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>index</title>
+  <link rel="stylesheet" type="text/css" href="assets/css/global.css">
+  <link rel="stylesheet" type="text/css" href="index/index.css">
+  <script src="js/jquery.js"></script>
+  <script src="js/tool.js"></script>
+  <script src="api/index.js"></script>
+  <script src="index/Cart.js"></script>
+  <script src="index/Shopping.js"></script>
+  <script src="index/SubList.js"></script>
+  <script src="index/index.js"></script>
+</head>
+<body>
+<div class="shop-container">
+  <div class="top-container">
+    <div class="top-left">
+      <img src="assets/img/logo.png" class="symbol-img">
+      <h2 class="symbol-title">Online Grocery Store</h2>
+    </div>
+  </div>
+  <div class="main-container">
+    <div class="menu-list">
+      <div class="top">
+        <h2>Categories</h2>
+        <div id="sub_list_view" class="item-list">
+        </div>
+      </div>
+      <div class="bottom">
+        <input id="text_search" type="text"/>
+        <button id="bt_search">Search</button>
+      </div>
+    </div>
+    <div class="center-container">
+      <div class="goods-area">
+        <div class="card-container">
+          <div class="space"></div>
+          <div id="goods_detail" class="card goods-purchase">
+            <img id="goods_img" src="assets/img/goods.png" class="goods-img">
+            <div class="purchase">
+              <div class="top">
+                <h3 id="goods_name">Instance Coffee</h3>
+                <div class="space-between">
+                  <span>Unit Price:</span>
+                  <span id="goods_price">2.89</span>
+                </div>
+                <div class="space-between">
+                  <span>Unit Quantity:</span>
+                  <span id="goods_quantity">200 gram</span>
+                </div>
+                <div class="space-between">
+                  <span>Stock:</span>
+                  <span id="goods_stock">497</span>
+                </div>
+              </div>
+              <div class="bottom">
+                <div class="goods-num">
+                  <div id="num_down" class="num">-</div>
+                  <div class="num-area" id="goods_number">0</div>
+                  <div id="num_up" class="num">+</div>
+                </div>
+                <div id="goods_insert" class="goods-insert">
+                    Add to Card
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="space"></div>
+        </div>
+        <div class="card-container">
+          <div class="space"></div>
+          <div class="card goods-purchase">
+            <p id="text_order" class="goods-text">Your Order</p>
+          </div>
+          <div class="space"></div>
+        </div>
+      </div>
+      <div class="cart-area">
+        <div class="cart-container">
+          <div class="space left"></div>
+          <div id="cart_content" class="cart-content">
+            <div class="header">
+              <h3 class="title">Your Cart</h3>
+              <button id="pay" disabled=true class="bt-pay">Pay</button>
+            </div>
+          </div>
+          <div class="space right"></div>
+        </div>
+    </div>
+  </div>
+</div>
+</div>
+</body>
+</html>
